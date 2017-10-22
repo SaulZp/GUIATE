@@ -1,0 +1,72 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+li{
+float: left;
+font-size: 20px;
+}
+
+nav{
+background: #095778;
+color: white;
+padding: 35px;
+width: 96.1%;
+}
+
+ul{
+list-style: none;
+}
+
+body{
+width: 100%;
+}
+
+a{
+float: right;
+color: white;
+text-decoration: none;
+}
+
+#tabla1{
+border-style: solid;
+border-color: black;
+padding: 15px;
+border-radius: 5px;
+}
+
+#tabla1{
+width: 96.5%;
+margin-left: 1%;
+}
+
+#tabla2{
+width: 96.5%;
+max-width: 800px;
+}
+
+img{
+transition: 1.5s ease;
+-moz-transition: 1.5s ease; /* Firefox */
+-webkit-transition: 1.5s ease; /* Chrome - Safari */
+ -o-transition: 1.5s ease; /* Opera */
+}
+
+img:hover{
+transform : scale(1.6);
+-moz-transform : scale(1.6); /* Firefox */
+-webkit-transform : scale(1.6); /* Chrome - Safari */
+-o-transform : scale(1.6); /* Opera */
+-ms-transform : scale(1.6); /* IE9 */
+}
+
+p{
+font-size: 20px;
+}
+
+#interna{
+overflow-x: scroll;
+width: 98.5%;
+margin-left:0.6%;
+}
