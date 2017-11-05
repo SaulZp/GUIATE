@@ -45,6 +45,14 @@ document.getElementById('cambiar').innerHTML ="Porcentaje: "+suma+"%";
 
 
 <div id="interna">
+	
+<div id="nomenclatura">
+	<h3>Nomenclatura</h3>
+	<div id="ap">.</div><label>Materias Aprobadas</label>
+	<div id="re">.</div><label>Materias Reprobadas</label>
+	<div id="po">.</div><label>Materias por Cursar</label>
+	<div id="en">.</div><label>Materias en curso</label><br>
+</div><br>
 
 <table id="tabla1" style="overflow-y:scroll">
 
