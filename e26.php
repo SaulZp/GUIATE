@@ -8,4 +8,5 @@ mysql_select_db("mapa",$con);
 mysql_query("UPDATE materias set e26='1' WHERE matricula='$_SESSION[username]'",$con);
 
 header("Location: mapa.php");
+
 ?>
