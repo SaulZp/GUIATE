@@ -86,6 +86,7 @@ mysql_select_db("mapa",$con);
       </div>
     </section>
 
+    
     <!-- About Section -->
     <section class="success" id="about">
       <div class="container">
@@ -123,8 +124,9 @@ mysql_select_db("mapa",$con);
               </div>
             </form>
 
-                        <?php
+        <?php
 
+    
             error_reporting(0);
 
             $nombre=$_POST["nombre"];
