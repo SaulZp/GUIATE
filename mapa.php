@@ -1,34 +1,20 @@
 <?php
+
 session_start();
 
-if (isset($_SESSION['username'])){
-	
-$segundos = time();
-$tiempo_transcurrido = $segundos;
-$tiempo_maximo = $_SESSION['inicio']  + ( $_SESSION['intervalo'] * 60 ) ; 
-if($tiempo_transcurrido > $tiempo_maximo){
-header('location: index.php');
-}else{
-$_SESSION['inicio'] = time();
-}
+error_reporting(0);
 
+$con=mysql_connect("localhost","root","");
+mysql_select_db("mapa",$con);
+
+if (isset($_SESSION['username'])){
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <title></title>
 </head>
-
-<script type="text/javascript">
-suma=0;
-
-function f1(){
-suma=suma+2;
-alert(suma+"%");
-document.getElementById('cambiar').innerHTML ="Porcentaje: "+suma+"%";
-}
-
-</script>
 
 <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
 
@@ -41,86 +27,115 @@ document.getElementById('cambiar').innerHTML ="Porcentaje: "+suma+"%";
 </ul>
 </nav>
 
+<h2>Selecciona el color de la nomenclatura y posteriormente la materia del mapa</h2>
+
 <br><br>
 
-
 <div id="interna">
-	
 <div id="nomenclatura">
 	<h3>Nomenclatura</h3>
-	<div id="ap">.</div><label>Materias Aprobadas</label>
-	<div id="re">.</div><label>Materias Reprobadas</label>
-	<div id="po">.</div><label>Materias por Cursar</label>
-	<div id="en">.</div><label>Materias en curso</label><br>
+	<button class="button1" value="">Materias Aprobadas</button>
+	<button class="button2" value="">Materias Reprobadas</button>
+	<button class="button3" value="">Materias por Cursar</button>
+	<button class="button4" value="">Materias en curso</button><br>
 </div><br>
-
 <table id="tabla1" style="overflow-y:scroll">
+<tr>
+	<th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+</tr>
 
 <tr>
-<td><img src="basicas/mate.png" onclick="f1()"></td><td><img src="basicas/cd.png" onclick="f1()"></td>
-<td><img src="basicas/ci.png" onclick="f1()"></td><td><img src="basicas/ed.png" onclick="f1()"></td>
-<td><img src="basicas/pye.png" onclick="f1()"></td><td><img src="tecnologia/mdr.png" onclick="f1()"></td>
-<td><img src="tecnologia/ri.png" onclick="f1()"></td><td><img src="ingenieria/tdc.png" onclick="f1()"></td>
+<td><form method="POST" action="e11.php"><input type="image" src="basicas/mate.png" id="e11"></form></td>
+<td><form method="POST" action="e12.php"><input type="image" src="basicas/cd.png" id="e12"></form></td>
+<td><form method="POST" action="e13.php"><input type="image" src="basicas/ci.png" id="e13"></form></td>
+<td><form method="POST" action="e14.php"><input type="image" src="basicas/ed.png" id="e14"></form></td>
+<td><form method="POST" action="e15.php"><input type="image" src="basicas/pye.png" id="e15"></form></td>
+<td><form method="POST" action="e16.php"><input type="image" src="tecnologia/mdr.png" id="e16"></form></td>
+<td><form method="POST" action="e17.php"><input type="image" src="tecnologia/ri.png" id="e17"></form></td>
+<td><form method="POST" action="e18.php"><input type="image" src="ingenieria/tdc.png" id="e18"></form></td>
 <td></td><td></td>
 </tr>
 
 <tr>
-<td><img src="basicas/as.png"></td><td><img src="basicas/f1.png"></td>
-<td><img src="basicas/f2.png"></td><td><img src="ingenieria/ce.png"></td>
-<td><img src="ingenieria/cel.png"></td><td><img src="ingenieria/dd.png"></td>
-<td><img src="tecnologia/md.png"></td><td><img src="tecnologia/adr.png"></td>
-<td><img src="tecnologia/iysdr.png"></td></td><td>
+<td><form method="POST" action="e21.php"><input type="image" src="basicas/as.png" id="e21"></form></td>
+<td><form method="POST" action="e22.php"><input type="image" src="basicas/f1.png" id="e22"></form></td>
+<td><form method="POST" action="e23.php"><input type="image" src="basicas/f2.png" id="e23"></form></td>
+<td><form method="POST" action="e24.php"><input type="image" src="ingenieria/ce.png" id="e24"></form></td>
+<td><form method="POST" action="e25.php"><input type="image" src="ingenieria/cel.png" id="e25"></form></td>
+<td><form method="POST" action="e26.php"><input type="image" src="ingenieria/dd.png" id="e26"></form></td>
+<td><form method="POST" action="e27.php"><input type="image" src="tecnologia/md.png" id="e27"></form></td>
+<td><form method="POST" action="e28.php"><input type="image" src="tecnologia/adr.png" id="e28"></form></td>
+<td><form method="POST" action="e29.php"><input type="image" src="tecnologia/iysdr.png" id="e29"></form></td>
+</td><td>
 </tr>
 
 <tr>
 <td></td>
-<td><img src="basicas/asce.png"></td><td><img src="basicas/md.png"></td><td></td><td></td>
-<td><img src="tecnologia/bdi.png"></td><td><img src="ingenieria/adc.png"></td><td></td>
-<td><img src="ingenieria/se.png"></td>
+<td><form method="POST" action="e32.php"><input type="image" src="basicas/asce.png" id="e32"></form></td>
+<td><form method="POST" action="e33.php"><input type="image" src="basicas/md.png" id="e33"></form></td><td></td><td></td>
+<td><form method="POST" action="e36.php"><input type="image" src="tecnologia/bdi.png" id="e36"></form></td>
+<td><form method="POST" action="e37.php"><input type="image" src="ingenieria/adc.png" id="e37"></form></td><td></td>
+<td><form method="POST" action="e39.php"><input type="image" src="ingenieria/se.png" id="e39"></form></td>
 </tr>
 
 <tr>
-<td><img src="ingenieria/mdlp.png"></td><td><img src="ingenieria/p1.png"></td><td><img src="ingenieria/p2.png"></td>
-<td><img src="tecnologia/g.png"></td><td><img src="ingenieria/so1.png"></td><td><img src="ingenieria/so2.png"></td>
-<td></td><td><img src="ingenieria/tecia.png"></td><td></td><td><img src="optativa/od.png"></td>
+<td><form method="POST" action="e41.php"><input type="image" src="ingenieria/mdlp.png" id="e41"></form></td>
+<td><form method="POST" action="e42.php"><input type="image" src="ingenieria/p1.png" id="e42"></form></td>
+<td><form method="POST" action="e43.php"><input type="image" src="ingenieria/p2.png" id="e43"></form></td>
+<td><form method="POST" action="e44.php"><input type="image" src="tecnologia/g.png" id="e44"></form></td>
+<td><form method="POST" action="e45.php"><input type="image" src="ingenieria/so1.png" id="e45"></form></td>
+<td><form method="POST" action="e46.php"><input type="image" src="ingenieria/so2.png" id="e46"></form></td>
+<td></td><td><form method="POST" action="e48.php"><input type="image" src="ingenieria/tecia.png" id="e48"></form></td>
+<td></td><td><form method="POST" action="e410.php"><input type="image" src="optativa/od.png" id="e410"></form></td>
 </tr>
 
 <tr>
-<td></td><td></td><td><img src="ingenieria/e.png"></td><td><img src="ingenieria/edd.png"></td>
-<td><img src="ingenieria/adda.png"></td><td><img src="optativa/adp.png"></td><td><img src="ingenieria/pcp.png"></td>
-<td><img src="ingenieria/pda.png"></td><td><img src="ingenieria/ss.png"></td><td><img src="ingenieria/pp.png"></td>
+<td></td><td></td>
+<td><form method="POST" action="e53.php"><input type="image" src="ingenieria/e.png" id="e53"></form></td>
+<td><form method="POST" action="e54.php"><input type="image" src="ingenieria/edd.png" id="e54"></form></td>
+<td><form method="POST" action="e55.php"><input type="image" src="ingenieria/adda.png" id="e55"></form></td>
+<td><form method="POST" action="e56.php"><input type="image" src="optativa/adp.png" id="e56"></form></td>
+<td><form method="POST" action="e57.php"><input type="image" src="ingenieria/pcp.png" id="e57"></form></td>
+<td><form method="POST" action="e58.php"><input type="image" src="ingenieria/pda.png" id="e58"></form></td>
+<td><form method="POST" action="e59.php"><input type="image" src="ingenieria/ss.png" id="e59"></form></td>
+<td><form method="POST" action="e510.php"><input type="image" src="ingenieria/pp.png" id="e510"></form></td>
 </tr>
 
 <tr>
-<td></td><td></td><td></td><td></td><td><img src="ingenieria/is.png"></td><td></td><td><img src="tecnologia/ddaw.png"></td>
-<td><img src="ingenieria/ddam.png"></td>
+<td></td><td></td><td></td><td></td><td>
+<td><form method="POST" action="e65.php"><input type="image" src="ingenieria/is.png" id="e65"></form></td>
+<td></td><td><form method="POST" action="e67.php"><input type="image" src="tecnologia/ddaw.png" id="e67"></form></td>
+<td><form method="POST" action="e68.php"><input type="image" src="ingenieria/ddam.png" id="e68"></form></td>
 </tr>
 
 <tr>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><img src="ingenieria/o1.png"></td>
-<td><img src="ingenieria/o2.png"></td><td><img src="optativa/pro1.png"></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td>
+</td><td><form method="POST" action="e78.php"><input type="image" src="ingenieria/o1.png" id="e78"></form></td>
+<td><form method="POST" action="e79.php"><input type="image" src="ingenieria/o2.png" id="e79"></form></td>
+<td><form method="POST" action="e710.php"><input type="image" src="optativa/pro1.png" id="e710"></form></td>
+</tr>
+
+<tr>
+<td><form method="POST" action="e81.php"><input type="image" src="general/le1.png" id="e81"></form></td>
+<td><form method="POST" action="e82.php"><input type="image" src="general/le2.png" id="e82"></form></td>
+<td><form method="POST" action="e83.php"><input type="image" src="general/le3.png" id="e83"></form></td>
+<td><form method="POST" action="e84.php"><input type="image" src="general/le4.png" id="e84"></form></td>
+</tr>
+<tr>
+<td><form method="POST" action="e91.php"><input type="image" src="general/FHS.png" id="e91"></form></td>
+<td><form method="POST" action="e92.php"><input type="image" src="general/DHPC.png" id="e92"></form></td>
 </tr>
 
 </table>
 </div>
 
-<br><br>
-
 <table id="tabla2">
-<tr>
-<td><img src="general/le1.png"></td><td><img src="general/le2.png"></td>
-<td><img src="general/le3.png"></td><td><img src="general/le4.png"></td>
-</tr>
-<tr>
-<td><img src="general/FHS.png"></td><td><img src="general/DHPC.png"></td>
-</tr>
 </table>
 
-<br>
-<p id="cambiar">Porcentaje 0%</p>
-<!-- ------------------------------------------------------------------------------->
+
 <script type="text/javascript">
 suma=0;
+
 
 var e11="<?php 
 $reg=mysql_query("SELECT * FROM materias WHERE matricula='$_SESSION[username]'");
@@ -422,6 +437,8 @@ $reg=mysql_query("SELECT * FROM materias WHERE matricula='$_SESSION[username]'")
 $res=mysql_fetch_array($reg);
 echo $res['e92'];
 ?>";
+
+
 
 if (e11=="1"){
 var element = document.getElementById("e11");
@@ -824,15 +841,16 @@ element.style.borderRadius = "25px";
 suma=suma+2;
 }
 
-//document.getElementById('cambiar').innerHTML ="Porcentaje: "+suma+"%";
+document.getElementById('cambiar').innerHTML ="Porcentaje: "+suma+"%";
 </script>
+
 </body>
 </html>
 
 <?php
+
 }else{
 echo "No puedes ver";
 }
+
 ?>
-
-
