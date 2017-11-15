@@ -28,22 +28,73 @@ float: right;
 color: white;
 text-decoration: none;
 }
-.button {
+.button1{
     position: relative;
-    background-color: #4CAF50;
+    background-color: blue;
     border: none;
-    font-size: 28px;
+    font-size: 12px;
     color: #FFFFFF;
-    padding: 20px;
-    width: 200px;
+    padding: 5px;
+    width: 60px;
     text-align: center;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+    display: inline-block;
 }
 
+.button2{
+    position: relative;
+    background-color: red;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 70px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button3{
+    position: relative;
+    background-color: green;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 70px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button4{
+    position: relative;
+    background-color: yellow;
+    border: none;
+    font-size: 12px;
+    color: #000;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
 .button:after {
     content: "";
     background: #90EE90;
@@ -101,30 +152,7 @@ margin-left:0.6%;
 	float: right;
 
 }
-#ap{
-	width: 40px;
-	height: 40px;
-background-color: blue;
-display: inline-block;
-}
-#re{
-	width: 40px;
-	height: 40px;
-background-color: red;
-display: inline-block;
-}
-#po{
-	width: 40px;
-	height: 40px;
-background-color: green;
-display: inline-block;
-}
-#en{
-	width: 40px;
-	height: 40px;
-background-color: yellow;
-display: inline-block;
-}
+
 
 img{
 transition: 1.5s ease;
