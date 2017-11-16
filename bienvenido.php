@@ -1,16 +1,12 @@
-<?php //Sesión
+<?php
 session_start();
 
+error_reporting(0);
+
+$con=mysql_connect("localhost","root","");
+mysql_select_db("mapa",$con);
+
 if (isset($_SESSION['username'])){
-  
-$segundos = time();
-$tiempo_transcurrido = $segundos;
-$tiempo_maximo = $_SESSION['inicio']  + ( $_SESSION['intervalo'] * 60 ) ; 
-if($tiempo_transcurrido > $tiempo_maximo){
-header('location: index.php');
-}else{
-$_SESSION['inicio'] = time();
-}
 ?>
 
 <!DOCTYPE html>
@@ -53,10 +49,9 @@ $_SESSION['inicio'] = time();
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="mapa.php">Materias Aprobadas</a>
-            </li>
+              <a class="nav-link js-scroll-trigger" href="mapa.php">Mapa</a>            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="mapa.php">Carga Materias</a>
+              <a class="nav-link js-scroll-trigger" href="mapa.php">Porcentaje</a>
             </li>
           </ul>
         </div>
