@@ -140,10 +140,18 @@ mysql_select_db("mapa",$con);
             materias(matricula,e11,e12,e13,e14,e15,e16,e17,e18,e21,e22,e23,e24,e25,e26,e27,e28,e29,
             e32,e33,e36,e37,e39,e41,e42,e43,e44,e45,e46,e48,e410,
             e53,e54,e55,e56,e57,e58,e59,e510,
-            e65,e67,e68,e78,e79,e710,e81,e82,e83,e84,e91,e92)VALUES
-            ('$_POST[matricula]','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'
-            ,'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'
-            ,'0','0','0','0','0','0','0','0','0','0','0','0','0','0')",$con);
+            e65,e67,e68,e78,e79,e710,e81,e82,e83,e84,e91,e92,variable)VALUES
+            ('$_POST[matricula]',
+            '4','0','0','0','0','0','0','0',
+            '4','0','0','0','0','0','0','0','0',
+            '0','0','0','0','0',
+            '4','0','0','0','0','0','0','0','0',
+            '0','0','0','0','0'
+            ,'0','0','0',
+            '0','0','0',
+            '0','0',
+            '4','0','0','0',
+            '4','0','0')",$con);
 
             if ($nombre!=null){
             ?>
@@ -201,9 +209,6 @@ mysql_select_db("mapa",$con);
 
             $reg=mysql_query("SELECT * FROM usuarios WHERE contrasena='$_POST[contrasena2]'");
             $res=mysql_fetch_array($reg);
-
-            $_SESSION['intervalo']  = 0.1; 
-            $_SESSION['inicio'] = time();
             
             if($_POST["contrasena2"]!=null){
             if($res['contrasena']==$_POST["contrasena2"]){
