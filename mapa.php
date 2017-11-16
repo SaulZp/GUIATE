@@ -861,7 +861,6 @@ var element = document.getElementById("e11");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e12=="2"){
@@ -869,7 +868,6 @@ var element = document.getElementById("e12");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e13=="2"){
@@ -877,7 +875,6 @@ var element = document.getElementById("e13");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e14=="2"){
@@ -885,7 +882,6 @@ var element = document.getElementById("e14");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e15=="2"){
@@ -893,7 +889,6 @@ var element = document.getElementById("e15");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e16=="2"){
@@ -901,7 +896,6 @@ var element = document.getElementById("e16");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e17=="2"){
@@ -909,7 +903,6 @@ var element = document.getElementById("e17");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e18=="2"){
@@ -917,7 +910,6 @@ var element = document.getElementById("e18");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e21=="2"){
@@ -925,7 +917,6 @@ var element = document.getElementById("e21");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 
@@ -934,7 +925,6 @@ var element = document.getElementById("e22");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e23=="2"){
@@ -942,7 +932,6 @@ var element = document.getElementById("e23");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e24=="2"){
@@ -950,7 +939,6 @@ var element = document.getElementById("e24");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e25=="2"){
@@ -958,7 +946,6 @@ var element = document.getElementById("e25");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e26=="2"){
@@ -966,7 +953,7 @@ var element = document.getElementById("e26");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e27=="2"){
@@ -974,7 +961,6 @@ var element = document.getElementById("e27");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e28=="2"){
@@ -982,7 +968,7 @@ var element = document.getElementById("e28");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e29=="2"){
@@ -990,7 +976,7 @@ var element = document.getElementById("e29");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e32=="2"){
@@ -998,7 +984,7 @@ var element = document.getElementById("e32");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e33=="2"){
@@ -1006,7 +992,7 @@ var element = document.getElementById("e33");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e36=="2"){
@@ -1014,7 +1000,7 @@ var element = document.getElementById("e36");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e37=="2"){
@@ -1022,7 +1008,7 @@ var element = document.getElementById("e37");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e39=="2"){
@@ -1030,7 +1016,7 @@ var element = document.getElementById("e39");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e41=="2"){
@@ -1038,7 +1024,7 @@ var element = document.getElementById("e41");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e42=="2"){
@@ -1046,7 +1032,7 @@ var element = document.getElementById("e42");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e43=="2"){
@@ -1054,7 +1040,7 @@ var element = document.getElementById("e43");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e44=="2"){
@@ -1062,7 +1048,6 @@ var element = document.getElementById("e44");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e45=="2"){
@@ -1070,7 +1055,6 @@ var element = document.getElementById("e45");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e46=="2"){
@@ -1078,7 +1062,6 @@ var element = document.getElementById("e46");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e48=="2"){
@@ -1086,7 +1069,6 @@ var element = document.getElementById("e48");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e410=="2"){
@@ -1094,7 +1076,7 @@ var element = document.getElementById("e410");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e53=="2"){
@@ -1102,7 +1084,7 @@ var element = document.getElementById("e53");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e54=="2"){
@@ -1110,7 +1092,6 @@ var element = document.getElementById("e54");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e55=="2"){
@@ -1118,7 +1099,6 @@ var element = document.getElementById("e55");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e56=="2"){
@@ -1126,7 +1106,7 @@ var element = document.getElementById("e56");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e57=="2"){
@@ -1134,7 +1114,7 @@ var element = document.getElementById("e57");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e58=="2"){
@@ -1142,7 +1122,6 @@ var element = document.getElementById("e58");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e59=="2"){
@@ -1171,7 +1150,7 @@ var element = document.getElementById("e67");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e68=="2"){
@@ -1179,7 +1158,7 @@ var element = document.getElementById("e68");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e78=="2"){
@@ -1187,7 +1166,7 @@ var element = document.getElementById("e78");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e79=="2"){
@@ -1195,7 +1174,7 @@ var element = document.getElementById("e79");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e710=="2"){
@@ -1203,7 +1182,7 @@ var element = document.getElementById("e710");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e81=="2"){
@@ -1211,7 +1190,7 @@ var element = document.getElementById("e81");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e82=="2"){
@@ -1219,7 +1198,7 @@ var element = document.getElementById("e82");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e83=="2"){
@@ -1227,7 +1206,7 @@ var element = document.getElementById("e83");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e84=="2"){
@@ -1235,7 +1214,7 @@ var element = document.getElementById("e84");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e91=="2"){
@@ -1243,7 +1222,7 @@ var element = document.getElementById("e91");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 if (e92=="2"){
@@ -1251,7 +1230,7 @@ var element = document.getElementById("e92");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
