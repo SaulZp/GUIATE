@@ -56,7 +56,7 @@ $_SESSION['inicio'] = time();
               <a class="nav-link js-scroll-trigger" href="mapa.php">Materias Aprobadas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Campo 2</a>
+              <a class="nav-link js-scroll-trigger" href="mapa.php">Carga Materias</a>
             </li>
           </ul>
         </div>

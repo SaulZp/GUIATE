@@ -30,13 +30,13 @@ if (isset($_SESSION['username'])){
 
 <br><br>
 
-<form method="POST" action="Aprobadas.php">&nbsp;
-<input type="checkbox" name="vec" value="1">Aprobadas &nbsp;
+<form method="POST" action="Aprovadas.php">&nbsp;
+<input type="checkbox" name="vec" value="1">Aprovadas &nbsp;
 <input type="submit" value="Cargar">
 </form>
 <br>
-<form method="POST" action="Reprobadas.php">&nbsp;
-<input type="checkbox" name="vec2" value="2">Reprobadas &nbsp;
+<form method="POST" action="Reprovadas.php">&nbsp;
+<input type="checkbox" name="vec2" value="2">Reprovadas &nbsp;
 <input type="submit" value="Cargar">
 </form>
 <br>
