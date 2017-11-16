@@ -1150,7 +1150,6 @@ var element = document.getElementById("e59");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e510=="2"){
@@ -1158,7 +1157,6 @@ var element = document.getElementById("e510");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e65=="2"){
@@ -1166,7 +1164,6 @@ var element = document.getElementById("e65");
 element.style.background="#FE2E2E";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
 }
 
 if (e67=="2"){
