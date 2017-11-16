@@ -1,0 +1,213 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+li{
+float: left;
+font-size: 20px;
+}
+
+nav{
+background: #095778;
+color: white;
+padding: 35px;
+width: 96.1%;
+}
+
+ul{
+list-style: none;
+}
+
+body{
+width: 100%;
+}
+
+a{
+float: right;
+color: white;
+text-decoration: none;
+}
+
+#tabla1{
+
+width: 100%;
+border-collapse: collapse;
+margin: 20px;
+
+}
+
+#tabla1 td, #tabla1 th {
+    border: 1px solid #ddd;
+
+   
+}
+
+#tabla2{
+width: 96.5%;
+max-width: 800px;
+}
+#tabla1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAFff;
+  
+}
+#interna{
+overflow-x: scroll;
+width: 100%;
+margin-left:0.6%;
+}
+#nomenclatura{
+	
+	width: 30%;
+	float: left;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+    text-align: center;
+	padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+    background-color: #4CAFff;
+	
+
+}
+
+img{
+transition: 1.5s ease;
+-moz-transition: 1.5s ease; /* Firefox */
+-webkit-transition: 1.5s ease; /* Chrome - Safari */
+ -o-transition: 1.5s ease; /* Opera */
+}
+
+img:hover{
+transform : scale(1.6);
+-moz-transform : scale(1.6); /* Firefox */
+-webkit-transform : scale(1.6); /* Chrome - Safari */
+-o-transform : scale(1.6); /* Opera */
+-ms-transform : scale(1.6); /* IE9 */
+}
+
+p{
+font-size: 20px;
+}
+.button1{
+    position: relative;
+    background-color: blue;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button2{
+    position: relative;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button4{
+    position: relative;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button3{
+    position: relative;
+    background-color: yellow;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button1:hover {background-color: #dddddd}
+
+.button1:active {
+  background-color: #dddddd;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.button2:hover {background-color: #dddddd}
+
+.button2:active {
+  background-color: #dddddd;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+.button4:hover {background-color: #dddddd}
+
+.button4:active {
+  background-color: #dddddd;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+.button3:hover {background-color: #dddddd}
+
+.button3:active {
+  background-color: #dddddd;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+#help h3{
+	float: right;
+}
+.estatus{
+	width: 100%;
+}
+#col{
+	
+}
