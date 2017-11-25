@@ -13,6 +13,7 @@ if (isset($_SESSION['username'])){
 <html>
 <head>
 <title></title>
+´<meta charset="utf-8">
 </head>
 
 <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
@@ -27,35 +28,51 @@ if (isset($_SESSION['username'])){
 <a href="bienvenido.php">Regresar</a>
 </ul>
 </nav>
-
-<br><br>
-
-<form method="POST" action="Aprovadas.php">&nbsp;
-<input type="checkbox" name="vec" value="1">Aprovadas &nbsp;
-<input type="submit" value="Cargar">
+<div id="nomenclatura">
+<div id="cabe">
+<script type="text/javascript">
+	function ayuda(){
+		alert("Instrucciones:\n Elige una opción de la izquierda y después da clic en el boton cargar.\n Despues da clic sobre la materia que quieras actualizar");
+	}
+</script>	
+	<h3>Nomenclatura<button type="submit" onclick="ayuda()" id="help"><img src="img/ayuda.bmp">.</button></h3>
+</div>
+	
+		
+	
+<div class="estatus">	
+<form method="POST" action="Aprovadas.php">
+<input type="checkbox" name="vec" value="1"><label>Aprobadas </label>
+<input type="submit" value="Cargar" class="button1">
 </form>
-<br>
-<form method="POST" action="Reprovadas.php">&nbsp;
-<input type="checkbox" name="vec2" value="2">Reprovadas &nbsp;
-<input type="submit" value="Cargar">
+</div>
+<div class="estatus">
+<form method="POST" action="Reprovadas.php">
+<input type="checkbox" name="vec2" value="2"><label>Reprobadas</label>
+<input type="submit" value="Cargar" class="button2">
 </form>
-<br>
-<form method="POST" action="Acursar.php">&nbsp;
-<input type="checkbox" name="vec3" value="3">A cursar &nbsp;
-<input type="submit" value="Cargar">
+</div>
+<div class="estatus">
+<form method="POST" action="Acursar.php">
+<input type="checkbox" name="vec3" value="3"><label>A cursar </label>
+<input type="submit" value="Cargar" class="button3">
 </form>
-<br>
-<form method="POST" action="Encurso.php">&nbsp;
-<input type="checkbox" name="vec4" value="4">En curso &nbsp;
-<input type="submit" value="Cargar">
+</div>
+<div class="estatus">
+<form method="POST" action="Encurso.php">
+<input type="checkbox" name="vec4" value="4"><label>En curso </label>
+<input type="submit" value="Cargar" class="button4">
 </form>
-
+</div>
+</div>
 <br><br>
 
 <div id="interna">
 
 <table id="tabla1" style="overflow-y:scroll">
-
+<tr>
+	<th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+</tr>
 <tr>
 <td><form method="POST" action="e11.php"><input type="image" src="basicas/mate.png" id="e11"></form></td>
 <td><form method="POST" action="e12.php"><input type="image" src="basicas/cd.png" id="e12"></form></td>
@@ -126,13 +143,6 @@ if (isset($_SESSION['username'])){
 <td><form method="POST" action="e79.php"><input type="image" src="ingenieria/o2.png" id="e79"></form></td>
 <td><form method="POST" action="e710.php"><input type="image" src="optativa/pro1.png" id="e710"></form></td>
 </tr>
-
-</table>
-</div>
-
-<br><br>
-
-<table id="tabla2">
 <tr>
 <td><form method="POST" action="e81.php"><input type="image" src="general/le1.png" id="e81"></form></td>
 <td><form method="POST" action="e82.php"><input type="image" src="general/le2.png" id="e82"></form></td>
@@ -144,11 +154,8 @@ if (isset($_SESSION['username'])){
 <td><form method="POST" action="e92.php"><input type="image" src="general/DHPC.png" id="e92"></form></td>
 </tr>
 </table>
-
-<br>
-
-<br><br>
-
+</div>
+<h1 id="cambiar">0 porciento</h1>
 <script type="text/javascript">
 suma=0;
 
@@ -452,7 +459,234 @@ $reg=mysql_query("SELECT * FROM materias WHERE matricula='$_SESSION[username]'")
 $res=mysql_fetch_array($reg);
 echo $res['e92'];
 ?>";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//MATEMATICAS ABRE CALCULO
+if(e11=="1" && e12=="0"){
+var element = document.getElementById("e12");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";
+}
 
+if(e11=="1" && e12=="1"){
+var element = document.getElementById("e12");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";
+}
+
+//MATEMATICAS ABRE FISICA I
+if(e11=="1" && e22=="0"){
+var element = document.getElementById("e22");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e11=="1" && e22=="1"){
+var element = document.getElementById("e22");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";
+}
+
+//CALCULO DIFERENCIAL ABRE INTEGRAL
+if(e12=="1" && e13=="0"){
+var element = document.getElementById("e13");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e12=="1" && e13=="1"){
+var element = document.getElementById("e13");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//INTEGRAL ABRE ECUACIONES
+if(e13=="1" && e14=="0"){
+var element = document.getElementById("e14");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e13=="1" && e14=="1"){
+var element = document.getElementById("e14");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//INTEGRAL ABRE PROBABILIDAD
+if(e13=="1" && e15=="0"){
+var element = document.getElementById("e15");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e13=="1" && e15=="1"){
+var element = document.getElementById("e15");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//ECUACIONES ABRE TEORIA DE CONTROL
+if(e14=="1" && e18=="0"){
+var element = document.getElementById("e18");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e14=="1" && e18=="1"){
+var element = document.getElementById("e18");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//PROBABILIDAD ABRE MODELO DE REDES
+if(e15=="1" && e16=="0"){
+var element = document.getElementById("e16");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e15=="1" && e16=="1"){
+var element = document.getElementById("e16");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//PROBABILIDAD ABRE MINERIA DE DATOS
+if(e15=="1" && e27=="0"){
+var element = document.getElementById("e27");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e15=="1" && e27=="1"){
+var element = document.getElementById("e27");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//MODELO DE REDES ABRE REDES INALAMBRICAS
+if(e16=="1" && e17=="0"){
+var element = document.getElementById("e17");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e16=="1" && e17=="1"){
+var element = document.getElementById("e17");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//REDES INALAMBRICAS ABRE ADM. DE REDES
+if(e17=="1" && e28=="0"){
+var element = document.getElementById("e28");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e17=="1" && e28=="1"){
+var element = document.getElementById("e28");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//FISICA 1 ABRE FISICA 2
+if(e22=="1" && e23=="0"){
+var element = document.getElementById("e23");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e22=="1" && e23=="1"){
+var element = document.getElementById("e23");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//FISICA 2 ABRE C.E.
+if(e23=="1" && e24=="0"){
+var element = document.getElementById("e24");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e23=="1" && e24=="1"){
+var element = document.getElementById("e24");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//C.E. ABRE C.EL.
+if(e24=="1" && e25=="0"){
+var element = document.getElementById("e25");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e24=="1" && e25=="1"){
+var element = document.getElementById("e25");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//C.EL. ABRE DISEÑO DIGITAL
+if(e25=="1" && e26=="0"){
+var element = document.getElementById("e26");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e25=="1" && e26=="1"){
+var element = document.getElementById("e26");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+//ADM. DE REDES ABRE INTERC. SEG. EN REDES
+if(e28=="1" && e29=="0"){
+var element = document.getElementById("e29");
+element.style.background="#F4FA58";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+if(e28=="1" && e29=="1"){
+var element = document.getElementById("e29");
+element.style.background="#3a7999";
+element.style.padding= "8px";
+element.style.borderRadius = "25px";	
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (e11=="1"){
 var element = document.getElementById("e11");
 element.style.background="#3a7999";
@@ -1668,7 +1902,7 @@ var element = document.getElementById("e11");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e12=="4"){
@@ -1676,7 +1910,7 @@ var element = document.getElementById("e12");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e13=="4"){
@@ -1684,7 +1918,7 @@ var element = document.getElementById("e13");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e14=="4"){
@@ -1692,7 +1926,7 @@ var element = document.getElementById("e14");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e15=="4"){
@@ -1700,7 +1934,7 @@ var element = document.getElementById("e15");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e16=="4"){
@@ -1708,7 +1942,7 @@ var element = document.getElementById("e16");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e17=="4"){
@@ -1716,7 +1950,7 @@ var element = document.getElementById("e17");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e18=="4"){
@@ -1724,7 +1958,7 @@ var element = document.getElementById("e18");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e21=="4"){
@@ -1732,7 +1966,7 @@ var element = document.getElementById("e21");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 
@@ -1741,7 +1975,7 @@ var element = document.getElementById("e22");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e23=="4"){
@@ -1749,7 +1983,7 @@ var element = document.getElementById("e23");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e24=="4"){
@@ -1757,7 +1991,7 @@ var element = document.getElementById("e24");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e25=="4"){
@@ -1765,7 +1999,7 @@ var element = document.getElementById("e25");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e26=="4"){
@@ -1773,7 +2007,7 @@ var element = document.getElementById("e26");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e27=="4"){
@@ -1781,7 +2015,7 @@ var element = document.getElementById("e27");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e28=="4"){
@@ -1789,7 +2023,7 @@ var element = document.getElementById("e28");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e29=="4"){
@@ -1797,7 +2031,7 @@ var element = document.getElementById("e29");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e32=="4"){
@@ -1805,7 +2039,7 @@ var element = document.getElementById("e32");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e33=="4"){
@@ -1813,7 +2047,7 @@ var element = document.getElementById("e33");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e36=="4"){
@@ -1821,7 +2055,7 @@ var element = document.getElementById("e36");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e37=="4"){
@@ -1829,7 +2063,7 @@ var element = document.getElementById("e37");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e39=="4"){
@@ -1837,7 +2071,7 @@ var element = document.getElementById("e39");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e41=="4"){
@@ -1845,7 +2079,7 @@ var element = document.getElementById("e41");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e42=="4"){
@@ -1853,7 +2087,7 @@ var element = document.getElementById("e42");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e43=="4"){
@@ -1861,7 +2095,7 @@ var element = document.getElementById("e43");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e44=="4"){
@@ -1869,7 +2103,7 @@ var element = document.getElementById("e44");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e45=="4"){
@@ -1877,7 +2111,7 @@ var element = document.getElementById("e45");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e46=="4"){
@@ -1885,7 +2119,7 @@ var element = document.getElementById("e46");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e48=="4"){
@@ -1893,7 +2127,7 @@ var element = document.getElementById("e48");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e410=="4"){
@@ -1901,7 +2135,7 @@ var element = document.getElementById("e410");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e53=="4"){
@@ -1909,7 +2143,7 @@ var element = document.getElementById("e53");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e54=="4"){
@@ -1917,7 +2151,7 @@ var element = document.getElementById("e54");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e55=="4"){
@@ -1925,7 +2159,7 @@ var element = document.getElementById("e55");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e56=="4"){
@@ -1933,7 +2167,7 @@ var element = document.getElementById("e56");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e57=="4"){
@@ -1941,7 +2175,7 @@ var element = document.getElementById("e57");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e58=="4"){
@@ -1949,7 +2183,7 @@ var element = document.getElementById("e58");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e59=="4"){
@@ -1957,7 +2191,7 @@ var element = document.getElementById("e59");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e510=="4"){
@@ -1965,7 +2199,7 @@ var element = document.getElementById("e510");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e65=="4"){
@@ -1973,7 +2207,7 @@ var element = document.getElementById("e65");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e67=="4"){
@@ -1981,7 +2215,7 @@ var element = document.getElementById("e67");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e68=="4"){
@@ -1989,7 +2223,7 @@ var element = document.getElementById("e68");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e78=="4"){
@@ -1997,7 +2231,7 @@ var element = document.getElementById("e78");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e79=="4"){
@@ -2005,7 +2239,7 @@ var element = document.getElementById("e79");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e710=="4"){
@@ -2013,7 +2247,7 @@ var element = document.getElementById("e710");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e81=="4"){
@@ -2021,7 +2255,7 @@ var element = document.getElementById("e81");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e82=="4"){
@@ -2029,7 +2263,7 @@ var element = document.getElementById("e82");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e83=="4"){
@@ -2037,7 +2271,7 @@ var element = document.getElementById("e83");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e84=="4"){
@@ -2045,7 +2279,7 @@ var element = document.getElementById("e84");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+//suma=suma+2;
 }
 
 if (e91=="4"){
@@ -2053,7 +2287,7 @@ var element = document.getElementById("e91");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+////suma=suma+2;
 }
 
 if (e92=="4"){
@@ -2061,12 +2295,16 @@ var element = document.getElementById("e92");
 element.style.background="#01DF01";
 element.style.padding= "8px";
 element.style.borderRadius = "25px";
-suma=suma+2;
+////suma=suma+2;
 }
 
-//document.getElementById('cambiar').innerHTML ="Porcentaje: "+suma+"%";
+document.getElementById('cambiar').innerHTML ="Porcentaje: "+suma+"%";
 </script>
-
+<!--
+<div >
+<p id="cambiar">Porcentaje 0%</p>
+</div>
+-->
 </body>
 </html>
 
