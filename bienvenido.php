@@ -49,7 +49,14 @@ if (isset($_SESSION['username'])){
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="mapa.php">Mapa</a>            
+              <a class="nav-link js-scroll-trigger" href="mapa.php">Materias Aprobadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="mapa.php">Proximas Materias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="mapa.php">Carga Materias</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="mapa.php">Porcentaje</a>
             </li>
